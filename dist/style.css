@@ -11,21 +11,6 @@ html {
           box-sizing: inherit;
 }
 
-.attribution {
-  padding-top: 0.5rem;
-  font-size: 11px;
-  text-align: center;
-  color: white;
-}
-
-.attribution a {
-  color: white;
-}
-
-.attribution a:hover {
-  color: #00fff7;
-}
-
 body {
   margin: 0;
   padding: 0;
@@ -35,6 +20,13 @@ body {
 
 a {
   text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+p {
+  margin: 0;
 }
 
 .card-container {
@@ -100,15 +92,19 @@ a {
   margin: 1.25rem 0;
 }
 
-.card_text h2 {
+.card_text h1 {
   font-weight: 600;
-  color: white;
   display: inline-block;
+}
+
+.card_text h1 a {
+  font-size: 1.25rem;
+  color: white;
   -webkit-transition: color 150ms ease-in-out;
   transition: color 150ms ease-in-out;
 }
 
-.card_text h2:hover {
+.card_text h1 a:hover {
   color: #00fff7;
 }
 
@@ -117,7 +113,7 @@ a {
   line-height: 1.5;
 }
 
-.card_price {
+.card_data {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr 1fr;
@@ -126,7 +122,8 @@ a {
   border-bottom: 0.1px solid #8bacda;
 }
 
-.card_price .price1 {
+.card_data .price,
+.card_data .time {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -135,29 +132,25 @@ a {
           align-items: center;
 }
 
-.card_price .price1 h3 {
+.card_data .price h2,
+.card_data .time h2 {
   margin-left: 5px;
-  font-weight: 400;
   font-size: 0.8125rem;
+}
+
+.card_data .price h2 {
+  font-weight: 400;
   color: #00fff7;
 }
 
-.card_price .price2 {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+.card_data .time {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
 }
 
-.card_price .price2 h3 {
-  margin-left: 5px;
+.card_data .time h2 {
   font-weight: 300;
-  font-size: 0.8125rem;
   color: #8bacda;
 }
 
@@ -200,10 +193,17 @@ p {
   color: #8bacda;
 }
 
-h1,
-h2,
-h3,
-p {
-  margin: 0;
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  color: white;
+}
+
+.attribution a {
+  color: white;
+}
+
+.attribution a:hover {
+  color: #00fff7;
 }
 /*# sourceMappingURL=style.css.map */
